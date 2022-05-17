@@ -8,6 +8,21 @@
   font-family: "Koulen", cursive;
   src: url(fonts/Koulen-Regular.ttf);
 }
+header {
+  background: rgb(181, 181, 181);
+  text-align: center;
+  position: sticky;
+  padding: 2rem 1rem;
+}
+
+header .logo a {
+  font-family: "Koulen", cursive;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0px;
+  border-radius: 13px;
+}
 
 footer {
   color: black;
@@ -18,10 +33,10 @@ footer {
   top: 100vh;
 }
 
+/* til toppen */
 aside {
   font-family: "Koulen", cursive;
   color: rgb(95, 32, 220);
-  background: rgb(181, 181, 181);
   display: flex;
   justify-content: center;
   position: sticky;
@@ -83,7 +98,7 @@ p + figure {
   height: 100%;
   object-fit: cover;
 }
-/* andre ting */
+/* overskrifter  */
 h1 {
   font-family: "Koulen", cursive;
   color: white;
@@ -100,6 +115,7 @@ h3 {
   font-size: 0.8rem;
   padding: 1rem;
 }
+/* start billede */
 .plakat {
   display: grid;
   place-items: center;
@@ -108,6 +124,7 @@ h3 {
   background-position: cover;
   padding: 3rem;
 }
+/* start billede med tekst */
 .plakat img,
 h3 {
   font-family: "Koulen", cursive;
@@ -134,22 +151,14 @@ h3 {
   padding: 2rem;
 }
 
-header {
-  background: rgb(181, 181, 181);
-  text-align: center;
-  position: sticky;
-  padding: 2rem 1rem;
-}
-header .logo a {
-  font-family: "Koulen", cursive;
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 0px;
-  border-radius: 13px;
-}
 video,
 iframe {
   width: 100%;
   aspect-ratio: 16/9;
+}
+.content3 {
+  color: black;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
 }
