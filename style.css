@@ -1,0 +1,155 @@
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Koulen", cursive;
+  src: url(fonts/Koulen-Regular.ttf);
+}
+
+footer {
+  color: black;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  position: sticky;
+  top: 100vh;
+}
+
+aside {
+  font-family: "Koulen", cursive;
+  color: rgb(95, 32, 220);
+  background: rgb(181, 181, 181);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+  padding: 0.8rem 1rem;
+  margin: 0;
+  gap: 1.25rem;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== section ========== */
+section {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+  gap: 1rem;
+
+  padding-block: 4rem;
+  background: rgb(181, 181, 181);
+}
+
+/* ========== article ========== */
+article {
+  grid-column: 2;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.content > p {
+  /* /*kun direkte børn */
+  color: white;
+}
+
+p + figure {
+  /* ved siden af */
+  margin-top: 1rem;
+}
+
+/* ========== gallery ========== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  height: 100%;
+  object-fit: cover;
+}
+/* andre ting */
+h1 {
+  font-family: "Koulen", cursive;
+  color: white;
+  padding: 1rem;
+}
+h2 {
+  font-family: "Koulen", cursive;
+  color: darkblue;
+  font-size: 1.5rem;
+}
+h3 {
+  font-family: "Koulen", cursive;
+  color: black;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+.plakat {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 50%;
+  background-position: cover;
+  padding: 3rem;
+}
+.plakat img,
+h3 {
+  font-family: "Koulen", cursive;
+  color: white;
+  font-size: 2rem;
+  grid-area: 1/1;
+}
+.content2 {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  gap: 1rem;
+  background-color: rgb(97, 96, 96);
+  padding: 2rem;
+  border-radius: 20px;
+}
+.beskrivelse {
+  display: grid;
+  width: 70%;
+}
+.videoer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+header {
+  background: rgb(181, 181, 181);
+  text-align: center;
+  position: sticky;
+  padding: 2rem 1rem;
+}
+header .logo a {
+  font-family: "Koulen", cursive;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0px;
+  border-radius: 13px;
+}
+video,
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
